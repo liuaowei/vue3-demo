@@ -49,7 +49,7 @@ const handleParseAll = (index: number) => {
   if (tableData.value.length == 0) {
     return;
   }
-  let item = tableData.value[index];
+  let item: any = tableData.value[index];
   handleParse(item.request, index).then((response: any) => {
     tableData.value[index] = {
       ...tableData.value,
@@ -117,7 +117,7 @@ onMounted(() => {});
 <template>
   <div class="main">
     <h1>12345问题解析</h1>
-    <el-card class="content" shadow="false">
+    <el-card class="content" shadow="never">
       <template #header>
         <el-upload
           :multiple="false"
