@@ -5,19 +5,25 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "path": "^0.12.7",
-    "vue": "^3.5.13",
-    "vue-router": "4"
+    "axios": "^1.8.3",
+    "element-plus": "^2.9.6",
+    "exceljs": "^4.4.0",
+    "file-saver": "^2.0.5",
+    "js-export-excel": "^1.1.4",
+    "js-xlsx": "^0.8.22",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
+    "sass-embedded": "^1.85.1",
     "typescript": "~5.7.2",
     "vite": "^6.1.0",
-    "vue-tsc": "^2.2.0"
+    "vue-tsc": "^2.2.0",
+    "xlsx": "^0.16.9"
   }
 }
